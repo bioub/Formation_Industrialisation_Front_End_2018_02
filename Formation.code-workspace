@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "NodeCLI"
+		},
+		{
+			"path": "Exercice-Build"
 		}
 	],
 	"settings": {}
