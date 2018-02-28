@@ -29,6 +29,13 @@
     "serve:prod": "hs dist",
     "build:dev": "rimraf dist && webpack",
     "build:prod": "rimraf dist && webpack --env=production",
-    "lint:js": "eslint src"
+    "lint:js": "eslint src",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
