@@ -1,8 +1,9 @@
-const config = require('./config.json5');
+import config from './config.json5';
+import format from 'date-fns/format';
 
-'use strict';
+export const formatString = 'HH:mm:ss';
 
-class Horloge {
+export class Horloge {
   /**
    * @constructor
    * @param {HTMLElement} container
@@ -13,7 +14,7 @@ class Horloge {
 
   _render() {
     const now = new Date();
-    this._container.innerText = now.toLocaleTimeString();
+    this._container.innerText = format(now, formatString);
   }
 
   start() {
@@ -22,4 +23,3 @@ class Horloge {
   }
 }
 
-module.exports = Horloge;
