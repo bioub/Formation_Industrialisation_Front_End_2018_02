@@ -1,0 +1,3 @@
+{
+  delay: 1000, // delai de rafraichissement de l'horloge
+}

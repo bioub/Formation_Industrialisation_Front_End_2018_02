@@ -1,3 +1,4 @@
+const config = require('./config.json5');
 
 'use strict';
 
@@ -17,7 +18,7 @@ class Horloge {
 
   start() {
     this._render();
-    setInterval(this._render.bind(this), 1000);
+    setInterval(this._render.bind(this), config.delay);
   }
 }
 

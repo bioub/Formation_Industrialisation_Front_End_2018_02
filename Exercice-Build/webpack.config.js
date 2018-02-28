@@ -13,6 +13,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
-    new UglifyJSWebpackPlugin(),
-  ]
+   // new UglifyJSWebpackPlugin(),
+  ],
+  module: {
+    rules: [{
+      test: /\.json5$/,
+      loader: 'json5-loader'
+    }]
+  }
 };

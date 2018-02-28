@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rimraf css",
     "start:dev": "live-server",
-    "watch:scss": "npm run clean && node-sass --watch --output css scss",
+    "watch:scss": "npm run clean && node-sass --output css --watch scss",
     "build:scss": "npm run clean && node-sass --output-style compressed --output css scss"
   }
 }
