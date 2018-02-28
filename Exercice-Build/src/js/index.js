@@ -8,7 +8,6 @@ document.addEventListener('click', async () => {
     clock.start();
   }
   catch (err) {
-    console.log(err);
-    console.log(err);
+    console.warn(err);
   }
 });
